@@ -160,4 +160,4 @@ This project was built as part of **VIT Hackathon**, focusing on disaster prepar
 ---
 
 ## 🏆 License  
-This project is for educational and hackathon use only.
+This project is for educational and hackathon use only @2025.
