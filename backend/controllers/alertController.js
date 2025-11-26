@@ -14,4 +14,3 @@ export const sendAlert = async (req, res) => {
 
 
 //const alertController = { sendAlert };
-//export default alertController;   
