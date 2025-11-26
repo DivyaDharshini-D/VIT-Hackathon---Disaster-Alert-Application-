@@ -11,3 +11,7 @@ export const sendAlert = async (req, res) => {
 
   return res.json({ success: true, msg: "Alert sent to admins" });
 };
+
+
+//const alertController = { sendAlert };
+//export default alertController;   
