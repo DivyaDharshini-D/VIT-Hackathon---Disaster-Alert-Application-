@@ -1,11 +1,13 @@
 import { sendSMS } from "../services/smsService.js";
-import { sendPushNotification } from "../services/notificationService.js";
 
 export const sendAlert = async (req, res) => {
   const { message } = req.body;
 
-  await sendSMS(message);
-  await sendPushNotification(message);
+  if (!message) {
+    return res.status(400).json({ error: "Message is required" });
+  }
 
-  res.json({ message: "Alert broadcasted" });
+  sendSMS(message);
+
+  return res.json({ success: true, msg: "Alert sent to admins" });
 };
